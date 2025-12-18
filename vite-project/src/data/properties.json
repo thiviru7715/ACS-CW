@@ -11,9 +11,11 @@
         "shortDescription": "A charming terrace house near the city.",
         "longDescription": "This charming 3 bedroom terrace house is located in the heart of Westminster, London. It features a spacious living area, modern kitchen, and a beautiful garden. Perfect for families looking for a comfortable home close to the city center.",
         "images": [
-
+            "https://example.com/images/property1_img1.jpg",
+            "https://example.com/images/property1_img2.jpg",
+            "https://example.com/images/property1_img3.jpg"
         ],
-        "floorPlan": ""
-
-    }   
+        "floorPlan": "https://example.com/floorplans/property1_floorplan.pdf"
+    }  
+         
 ]
