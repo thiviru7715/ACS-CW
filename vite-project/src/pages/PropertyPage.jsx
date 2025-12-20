@@ -17,7 +17,8 @@ function PropertyPage() {
       <img src={property.images[0]} alt={property.title} />
       <p>£{property.price}</p>
       <p>{property.location}</p>
-      <p>{property.longDescription}</p>
+      <p>{property.description}</p>
+      <p>{property.added.month} {property.added.day}, {property.added.year}</p>
     </div>
   );
 }
