@@ -19,7 +19,8 @@ function PropertyPage() {
       {/* PROPERTY SUMMARY */}
       <div className="property-summary">
         <h2>£{property.price}</h2>
-        <p>{property.location}</p>
+        <p>Postcode: {property.postcode}</p>
+        <p>Location  :{property.location}</p>
         <p>
           {property.bedrooms} Bedroom {property.type}
         </p>

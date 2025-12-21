@@ -5,7 +5,10 @@ function SearchForm({ filters, setFilters }) {
         <input 
             type="text" 
             placeholder="Postcode area eg SW1"
-            value={filters.postcode} 
+            value={filters.postcode}
+            onChange={(e) =>
+                setFilters({ ...filters, postcode: e.target.value })
+            }
             />
 
             <select
