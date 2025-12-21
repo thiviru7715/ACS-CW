@@ -4,7 +4,7 @@ import properties from "../data/properties.json";
 import PropertyCard from "../components/PropertyCard";
 
 function SearchPage() {
-  const [filters, setFilters]=useState({
+  const [filters, setFilters] = useState({
     postcode: "",
     type: "",
     minBeds: "",
@@ -12,6 +12,28 @@ function SearchPage() {
   });
 
 
+  const filteredProperties = properties.filter((p) => {
+    if (
+      filters.postcode &&
+      !p.postcode.startsWith(filters.postcode.toUpperCase())
+    ) {
+      return false;
+    }
+
+    if (filters.type && p.type !== filters.type) {
+      return false;
+    }
+
+    // if (filters.minBeds && p.bedrooms < Number(filters.minBeds)) {
+    //   return false;
+    // }
+
+    // if (filters.maxBeds && p.bedrooms > Number(filters.maxBeds)) {
+    //   return false;
+    // }
+
+    return true;
+  });
 
   return (
     <div className="container">
@@ -20,7 +42,7 @@ function SearchPage() {
       <SearchForm filters={filters} setFilters={setFilters} />
 
       <div className="results">
-        {properties.map((p) => (
+        {filteredProperties.map((p) => (
           <PropertyCard key={p.id} property={p} />
         ))}
       </div>
