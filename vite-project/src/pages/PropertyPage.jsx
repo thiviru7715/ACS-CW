@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import properties from "../data/properties.json";
+import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
 function PropertyPage() {
   const { id } = useParams();
@@ -10,6 +12,8 @@ function PropertyPage() {
   if (!property) {
     return <p>Property not found</p>;
   }
+
+
 
   return (
     <div className="property-page">
@@ -46,6 +50,21 @@ function PropertyPage() {
       <p>{property.added.month} {property.added.day}, {property.added.year}</p>
     </div>
   );
-}
+  <Tabs>
+  <TabList>
+    <Tab>Description</Tab>
+    <Tab>Floor Plan</Tab>
+    <Tab>Map</Tab>
+  </TabList>
 
+  <TabPanel>
+    <p>{property.longDescription}</p>
+  </TabPanel>
+
+  <TabPanel>
+    <img src={property.floorPlan} alt="Floor plan" />
+  </TabPanel>
+  </Tabs>
+
+}
 export default PropertyPage;
