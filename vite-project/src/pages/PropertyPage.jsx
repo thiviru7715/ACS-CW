@@ -12,7 +12,21 @@ function PropertyPage() {
   if (!property) {
     return <p>Property not found</p>;
   }
+    <Tabs>
+      <TabList>
+        <Tab>Description</Tab>
+        <Tab>Floor Plan</Tab>
+        <Tab>Map</Tab>
+      </TabList>
 
+      <TabPanel>
+        <p>{property.longDescription}</p>
+      </TabPanel>
+
+      <TabPanel>
+        <img src={property.floorPlan} alt="Floor plan" />
+      </TabPanel>
+    </Tabs>
 
 
   return (
@@ -50,21 +64,5 @@ function PropertyPage() {
       <p>{property.added.month} {property.added.day}, {property.added.year}</p>
     </div>
   );
-  <Tabs>
-  <TabList>
-    <Tab>Description</Tab>
-    <Tab>Floor Plan</Tab>
-    <Tab>Map</Tab>
-  </TabList>
-
-  <TabPanel>
-    <p>{property.longDescription}</p>
-  </TabPanel>
-
-  <TabPanel>
-    <img src={property.floorPlan} alt="Floor plan" />
-  </TabPanel>
-  </Tabs>
-
 }
 export default PropertyPage;
