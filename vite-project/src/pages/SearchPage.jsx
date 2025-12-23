@@ -2,6 +2,7 @@ import { useState } from "react";
 import SearchForm from "../components/SearchForm";
 import properties from "../data/properties.json";
 import PropertyCard from "../components/PropertyCard";
+import FavouritesPanel from "../components/FavouritePanel";
 
 function SearchPage() {
   const [filters, setFilters] = useState({
@@ -47,7 +48,6 @@ function SearchPage() {
 
   return (
     <div className="container">
-      <h1>PropertyFinder</h1>
 
       <SearchForm filters={filters} setFilters={setFilters} />
 
@@ -55,7 +55,9 @@ function SearchPage() {
         {filteredProperties.map((p) => (
           <PropertyCard key={p.id} property={p} />
         ))}
+        
       </div>
+      <FavouritesPanel />
     </div>
   );
 }

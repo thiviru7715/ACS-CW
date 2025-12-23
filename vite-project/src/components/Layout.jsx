@@ -6,7 +6,7 @@ const Header = () => {
         <header className="layout-header">
             <div className="header-content">
                 <Link to="/" className="logo">
-                    PropertyFinder
+                    <h2>PropertyFinder</h2>
                 </Link>
             </div>
         </header>
@@ -15,7 +15,7 @@ const Header = () => {
 const Footer = () => {
     return (
         <footer className="layout-footer">
-            <div className="footer-bottom">
+            <div className="footer">
                 <p>&copy; 2025 PropertyFinder. All rights reserved.</p>
             </div>
         </footer>
