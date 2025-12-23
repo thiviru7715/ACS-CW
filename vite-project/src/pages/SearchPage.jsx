@@ -24,13 +24,13 @@ function SearchPage() {
       return false;
     }
 
-    // if (filters.minBeds && p.bedrooms < Number(filters.minBeds)) {
-    //   return false;
-    // }
+    if (filters.minBeds && p.bedrooms < Number(filters.minBeds)) {
+      return false;
+    }
 
-    // if (filters.maxBeds && p.bedrooms > Number(filters.maxBeds)) {
-    //   return false;
-    // }
+    if (filters.maxBeds && p.bedrooms > Number(filters.maxBeds)) {
+      return false;
+    }
 
     return true;
   });

@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
+import { useState } from "react";
 import properties from "../data/properties.json";
-import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
-import "react-tabs/style/react-tabs.css";
 import ImageGallery from "../components/ImageGallery";
+import PropertyTabs from "../components/PropertyTabs.jsx";
 
 function PropertyPage() {
   const { id } = useParams();
@@ -13,22 +13,6 @@ function PropertyPage() {
   if (!property) {
     return <p>Property not found</p>;
   }
-    <Tabs>
-      <TabList>
-        <Tab>Description</Tab>
-        <Tab>Floor Plan</Tab>
-        <Tab>Map</Tab>
-      </TabList>
-
-      <TabPanel>
-        <p>{property.longDescription}</p>
-      </TabPanel>
-
-      <TabPanel>
-        <img src={property.floorPlan} alt="Floor plan" />
-      </TabPanel>
-    </Tabs>
-
 
   return (
     <div className="property-page">
@@ -46,25 +30,16 @@ function PropertyPage() {
         <ImageGallery images={property.images} />
       </div>
 
-      {/* PROPERTY DETAILS */}
-      <div className="property-details">
-        <h3>Description</h3>
-        <p>{property.description}</p>
-      </div>
-
-      <section>
-        <h3>Floor Plan</h3>
-        <img
-          src={property.floorPlan}
-          alt="Floor Plan"
-          className="floor-plan"
-        />
-      </section>
+      <PropertyTabs property={property} />
 
       {/* DATE ADDED */}
       <h3>Date Added</h3>
       <p>{property.added.month} {property.added.day}, {property.added.year}</p>
+
     </div>
+    
   );
+
 }
+
 export default PropertyPage;

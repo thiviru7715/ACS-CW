@@ -1,11 +1,11 @@
 import {useState } from "react";
 
-function ImageGaller({ images }) {
-    const [currentIndex, setCurrentIndex] = useState(0);
+function ImageGallery({ images }) {
+    const [mainImage, setMainImage] = useState(0);
 
     return (
         <div className="gallery">
-            <img className="main-image" src="main-image.jpg" alt="Property" />
+            <img className="main-image" src={images[mainImage]} alt="Property" />
             <div className="thumbnails">
                 {images.map((img, index) => (
                     <img
