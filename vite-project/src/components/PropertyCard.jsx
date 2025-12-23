@@ -9,6 +9,7 @@ function PropertyCard({ property }) {
         <p>{property.type}</p>
         <p>{property.location}</p>
         <p>{property.bedrooms} Bedrooms</p>
+        <p>{property.shortDescription}</p>
         <Link to={`/property/${property.id}`}>View Details</Link>
         <button
             className="favourite-btn"

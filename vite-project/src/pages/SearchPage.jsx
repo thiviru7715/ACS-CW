@@ -8,6 +8,8 @@ function SearchPage() {
     postcode: "",
     type: "",
     minBeds: "",
+    maxBeds: "",
+    minPrice: "",
     maxPrice: "",
   });
 
@@ -29,6 +31,14 @@ function SearchPage() {
     }
 
     if (filters.maxBeds && p.bedrooms > Number(filters.maxBeds)) {
+      return false;
+    }
+
+    if (filters.minPrice && p.price < Number(filters.minPrice)) {
+      return false;
+    }
+
+    if (filters.maxPrice && p.price > Number(filters.maxPrice)) {
       return false;
     }
 

@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: "Segoe UI" ,Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    color: #1f2933;
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.continer{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.layout{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.search-form{
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}

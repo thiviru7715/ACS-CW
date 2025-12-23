@@ -7,6 +7,7 @@
         "price": 750000,
         "bedrooms": 3,
         "location": "Petts Wood Road, Petts Wood, Orpington BR5",
+        "shortDescription": "Charming 3 bedroom terrace house in Petts Wood",
         "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
         "images": [
             "../src/Images/1/house 1.jpg",
@@ -18,8 +19,6 @@
             "../src/Images/1/house 7.jpg"
         ],
         "floorPlan": "../src/Images/1/floor plan.png",
-        "lat": 51.385,
-        "lng": 0.075,
         "added": {
             "month": "October",
             "day": 12,
@@ -34,6 +33,7 @@
         "price": 3999995,
         "bedrooms": 2,
         "location": "Crofton Road Orpington BR6",
+        "shortDescription": "Modern 2 bedroom flat in Orpington",
         "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
         "images": [
             "../src/Images/2/house 1.jpg",
@@ -45,8 +45,6 @@
             "../src/Images/2/house 7.jpg"
         ],
         "floorPlan": "../src/Images/2/floorplan.png",
-        "lat": 51.556,
-        "lng": -0.178,
         "added": {
             "month": "September",
             "day": 14,
@@ -61,6 +59,7 @@
         "price": 1200000,
         "bedrooms": 4,
         "location": "Maple Avenue, Bromley BR2",
+        "shortDescription": "Spacious 4 bedroom detached house in Bromley",
         "description": "A spacious four bedroom detached family home located in a sought after residential area of Bromley. The property features a large living room, a modern kitchen with dining area, and a beautifully landscaped garden. The master bedroom includes an en-suite bathroom, and there is a family bathroom on the first floor. Additional features include a garage, driveway parking, and double glazing throughout. The property is close to local schools, parks, and shopping centers, making it an ideal family home.",
         "images": [
             "../src/Images/3/house 1.jpg",
@@ -72,8 +71,6 @@
             "../src/Images/3/house 7.jpg"
         ],
         "floorPlan": "../src/Images/3/floorplan.png",
-        "lat": 51.401,
-        "lng": 0.029,
         "added": {
             "month": "November",
             "day": 5,
@@ -89,6 +86,7 @@
     "price": 550000,
     "bedrooms": 2,
     "location": "Canary Wharf, London",
+    "shortDescription": "Modern 2 bedroom apartment in Canary Wharf",
     "description": "A modern two bedroom apartment located in the heart of Canary Wharf. The apartment features an open plan living and kitchen area, floor to ceiling windows, and a private balcony with city views. Residents benefit from a concierge service, secure entry, and excellent transport links including the DLR and Jubilee Line.",
     "images": [
             "../src/Images/4/house 1.jpg",
@@ -100,8 +98,6 @@
             "../src/Images/4/house 7.jpg"
     ],
     "floorPlan": "../src/Images/4/floorplan.png",
-    "lat": 51.505,
-    "lng": -0.020,
     "added": {
         "month": "October",
         "day": 12,
@@ -116,6 +112,7 @@
     "price": 320000,
     "bedrooms": 1,
     "location": "Southwark, London",
+    "shortDescription": "Cozy 1 bedroom studio flat in Southwark",
     "description": "A cozy one bedroom studio flat ideal for first time buyers or investors. The property offers a compact living space with a modern kitchenette, a separate sleeping area, and a contemporary shower room. Situated within walking distance of local cafes, shops, and public transport.",
     "images": [
             "../src/Images/5/house 1.jpg",
@@ -127,8 +124,6 @@
             "../src/Images/5/house 7.jpg"
     ],
     "floorPlan": "../src/Images/5/floorplan.png",
-    "lat": 51.503,
-    "lng": -0.091,
     "added": {
         "month": "September",
         "day": 18,

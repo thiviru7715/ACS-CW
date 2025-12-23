@@ -13,7 +13,7 @@ function ImageGallery({ images }) {
                         src={img}
                         alt="Thumbnail"
                         onClick={()=> setMainImage(img)}
-                        />
+                    />
                 ))}
             </div>
         </div>
