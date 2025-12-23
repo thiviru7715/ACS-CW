@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import properties from "../data/properties.json";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import ImageGallery from "../components/ImageGallery";
 
 function PropertyPage() {
   const { id } = useParams();
@@ -42,6 +43,7 @@ function PropertyPage() {
         <p>
           {property.bedrooms} Bedroom {property.type}
         </p>
+        <ImageGallery images={property.images} />
       </div>
 
       {/* PROPERTY DETAILS */}
