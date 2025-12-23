@@ -1,4 +1,4 @@
-import {useState } from "react";
+import { useState } from "react";
 
 function ImageGallery({ images }) {
     const [mainImage, setMainImage] = useState(0);
@@ -12,11 +12,11 @@ function ImageGallery({ images }) {
                         key={index}
                         src={img}
                         alt="Thumbnail"
-                        onClick={()=> setMainImage(img)}
+                        onClick={() => setMainImage(index)}
                     />
                 ))}
             </div>
         </div>
     );
-    }
+}
 export default ImageGallery;

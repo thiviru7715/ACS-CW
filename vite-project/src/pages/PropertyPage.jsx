@@ -16,16 +16,17 @@ function PropertyPage() {
 
   return (
     <div className="property-page">
+      
+
       <h1>{property.title}</h1>
-      <img src={property.images[0]} alt={property.title} />
 
       {/* PROPERTY SUMMARY */}
       <div className="property-summary">
         <h2>£{property.price}</h2>
-        <p>Postcode: {property.postcode}</p>
-        <p>Location  :{property.location}</p>
+        <p>Postcode : {property.postcode}</p>
+        <p>📍 Location : {property.location}</p>
         <p>
-          {property.bedrooms} Bedroom {property.type}
+          🏠 {property.bedrooms} Bedroom {property.type}
         </p>
         <ImageGallery images={property.images} />
       </div>

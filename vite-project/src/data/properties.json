@@ -19,6 +19,8 @@
             "../src/Images/1/house 7.jpg"
         ],
         "floorPlan": "../src/Images/1/floor plan.png",
+        "lat": 51.401,
+        "lng": 0.015,
         "added": {
             "month": "October",
             "day": 12,
@@ -45,6 +47,8 @@
             "../src/Images/2/house 7.jpg"
         ],
         "floorPlan": "../src/Images/2/floorplan.png",
+        "lat": 51.403,
+        "lng": 0.015,
         "added": {
             "month": "September",
             "day": 14,
@@ -71,6 +75,8 @@
             "../src/Images/3/house 7.jpg"
         ],
         "floorPlan": "../src/Images/3/floorplan.png",
+        "lat": 51.404,
+        "lng": 0.015,
         "added": {
             "month": "November",
             "day": 5,
@@ -98,6 +104,8 @@
             "../src/Images/4/house 7.jpg"
     ],
     "floorPlan": "../src/Images/4/floorplan.png",
+    "lat": 51.405,
+    "lng": 0.015,
     "added": {
         "month": "October",
         "day": 12,
@@ -124,6 +132,8 @@
             "../src/Images/5/house 7.jpg"
     ],
     "floorPlan": "../src/Images/5/floorplan.png",
+    "lat": 51.406,
+    "lng": 0.015,
     "added": {
         "month": "September",
         "day": 18,
