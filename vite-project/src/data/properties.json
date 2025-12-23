@@ -36,11 +36,15 @@
         "location": "Crofton Road Orpington BR6",
         "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
         "images": [
-            "https://example.com/images/property2_img1.jpg",
-            "https://example.com/images/property2_img2.jpg",
-            "https://example.com/images/property2_img3.jpg"
+            "../src/Images/2/house 1.jpg",
+            "../src/Images/2/house 2.jpg",
+            "../src/Images/2/house 3.jpg",
+            "../src/Images/2/house 4.jpg",
+            "../src/Images/2/house 5.jpg",
+            "../src/Images/2/house 6.jpg",
+            "../src/Images/2/house 7.jpg"
         ],
-        "floorPlan": "../src/Images/1/floor plan.png",
+        "floorPlan": "../src/Images/2/floorplan.png",
         "lat": 51.556,
         "lng": -0.178,
         "added": {
@@ -59,11 +63,15 @@
         "location": "Maple Avenue, Bromley BR2",
         "description": "A spacious four bedroom detached family home located in a sought after residential area of Bromley. The property features a large living room, a modern kitchen with dining area, and a beautifully landscaped garden. The master bedroom includes an en-suite bathroom, and there is a family bathroom on the first floor. Additional features include a garage, driveway parking, and double glazing throughout. The property is close to local schools, parks, and shopping centers, making it an ideal family home.",
         "images": [
-            "https://example.com/images/property3_img1.jpg",
-            "https://example.com/images/property3_img2.jpg",
-            "https://example.com/images/property3_img3.jpg"
+            "../src/Images/3/house 1.jpg",
+            "../src/Images/3/house 2.jpg",
+            "../src/Images/3/house 3.jpg",
+            "../src/Images/3/house 4.jpg",
+            "../src/Images/3/house 5.jpg",
+            "../src/Images/3/house 6.jpg",
+            "../src/Images/3/house 7.jpg"
         ],
-        "floorPlan": "../src/Images/1/floor plan.png",
+        "floorPlan": "../src/Images/3/floorplan.png",
         "lat": 51.401,
         "lng": 0.029,
         "added": {
@@ -83,11 +91,15 @@
     "location": "Canary Wharf, London",
     "description": "A modern two bedroom apartment located in the heart of Canary Wharf. The apartment features an open plan living and kitchen area, floor to ceiling windows, and a private balcony with city views. Residents benefit from a concierge service, secure entry, and excellent transport links including the DLR and Jubilee Line.",
     "images": [
-        "https://example.com/images/property4_img1.jpg",
-        "https://example.com/images/property4_img2.jpg",
-        "https://example.com/images/property4_img3.jpg"
+            "../src/Images/4/house 1.jpg",
+            "../src/Images/4/house 2.jpg",
+            "../src/Images/4/house 3.jpg",
+            "../src/Images/4/house 4.jpg",
+            "../src/Images/4/house 5.jpg",
+            "../src/Images/4/house 6.jpg",
+            "../src/Images/4/house 7.jpg"
     ],
-    "floorPlan": "../src/Images/2/floor_plan.png",
+    "floorPlan": "../src/Images/4/floorplan.png",
     "lat": 51.505,
     "lng": -0.020,
     "added": {
@@ -106,11 +118,15 @@
     "location": "Southwark, London",
     "description": "A cozy one bedroom studio flat ideal for first time buyers or investors. The property offers a compact living space with a modern kitchenette, a separate sleeping area, and a contemporary shower room. Situated within walking distance of local cafes, shops, and public transport.",
     "images": [
-        "https://example.com/images/property5_img1.jpg",
-        "https://example.com/images/property5_img2.jpg",
-        "https://example.com/images/property5_img3.jpg"
+            "../src/Images/5/house 1.jpg",
+            "../src/Images/5/house 2.jpg",
+            "../src/Images/5/house 3.jpg",
+            "../src/Images/5/house 4.jpg",
+            "../src/Images/5/house 5.jpg",
+            "../src/Images/5/house 6.jpg",
+            "../src/Images/5/house 7.jpg"
     ],
-    "floorPlan": "../src/Images/3/floor_plan.png",
+    "floorPlan": "../src/Images/5/floorplan.png",
     "lat": 51.503,
     "lng": -0.091,
     "added": {
