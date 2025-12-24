@@ -139,5 +139,62 @@
         "day": 18,
         "year": 2025
     }
-    }
+    },
+    {
+  "id": "6",
+  "title": "Elegant 3 bedroom semi-detached house",
+  "type": "House",
+  "postcode": "BR1",
+  "price": 685000,
+  "bedrooms": 3,
+  "location": "Widmore Road, Bromley BR1",
+  "shortDescription": "Elegant 3 bedroom semi-detached house in Bromley",
+  "description": "An elegant three bedroom semi-detached home located in a popular residential area of Bromley. The property offers a spacious living room, a separate dining room, and a modern fitted kitchen with access to a private rear garden. Upstairs features three well proportioned bedrooms and a contemporary family bathroom. The property also benefits from off street parking and is conveniently located near schools, parks, and transport links.",
+  "images": [
+    "../src/Images/6/house 1.jpg",
+    "../src/Images/6/house 2.jpg",
+    "../src/Images/6/house 3.jpg",
+    "../src/Images/6/house 4.jpg",
+    "../src/Images/6/house 5.jpg",
+    "../src/Images/6/house 6.jpg",
+    "../src/Images/6/house 7.jpg"
+  ],
+  "floorPlan": "../src/Images/6/floorplan.png",
+  "lat": 51.410,
+  "lng": 0.017,
+  "added": {
+    "month": "August",
+    "day": 22,
+    "year": 2025
+  }
+},
+{
+  "id": "7",
+  "title": "Luxury 5 bedroom detached family home",
+  "type": "House",
+  "postcode": "KT6",
+  "price": 1850000,
+  "bedrooms": 5,
+  "location": "Portsmouth Road, Surbiton KT6",
+  "shortDescription": "Luxury 5 bedroom detached home in Surbiton",
+  "description": "A stunning five bedroom detached family home offering luxury living in the heart of Surbiton. The property features multiple reception rooms, a high specification open plan kitchen and dining area, and bi-folding doors leading to a landscaped garden. The first floor offers five spacious bedrooms including a master suite with en-suite bathroom. Additional benefits include a double garage, driveway parking, and excellent transport links into central London.",
+  "images": [
+    "../src/Images/7/house 1.jpg",
+    "../src/Images/7/house 2.jpg",
+    "../src/Images/7/house 3.jpg",
+    "../src/Images/7/house 4.jpg",
+    "../src/Images/7/house 5.jpg",
+    "../src/Images/7/house 6.jpg",
+    "../src/Images/7/house 7.jpg"
+  ],
+  "floorPlan": "../src/Images/7/floorplan.png",
+  "lat": 51.394,
+  "lng": -0.304,
+  "added": {
+    "month": "July",
+    "day": 9,
+    "year": 2025
+  }
+}
+
 ]

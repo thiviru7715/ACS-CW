@@ -236,13 +236,6 @@ a {
   z-index: 1000;
 }
 
-/* Heading */
-.favourites-panel h3 {
-  font-size: 18px;
-  margin-bottom: 12px;
-  color: #1f2933;
-}
-
 /* Favourite item */
 .favourite-item {
   display: flex;
@@ -273,10 +266,6 @@ a {
   font-size: 18px;
   color: #dc2626;
   cursor: pointer;
-}
-
-.favourite-item button:hover {
-  color: #b91c1c;
 }
 
 /* Clear all button */

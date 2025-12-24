@@ -38,9 +38,7 @@ function PropertyPage() {
       <p>{property.added.month} {property.added.day}, {property.added.year}</p>
 
     </div>
-    
   );
-
 }
 
 export default PropertyPage;
