@@ -284,4 +284,35 @@ a {
 .favourites-panel > button:hover {
   background-color: #b91c1c;
 }
+/* Tablet responsive */
+@media (max-width: 1024px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .results {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .favourites-panel {
+    width: 100%;
+    position: static;
+    margin-top: 20px;
+  }
+}
+/* MOBILE responsive */
+@media (max-width: 768px) {
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .search-form button {
+    grid-column: span 1;
+  }
+
+  .results {
+    grid-template-columns: 1fr;
+  }
+}
+
 
