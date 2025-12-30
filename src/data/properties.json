@@ -18,7 +18,7 @@
             "Images/1/house 6.jpg",
             "Images/1/house 7.jpg"
         ],
-        "floorPlan": "../src/Images/1/floor plan.png",
+        "floorPlan": "Images/1/floor plan.png",
         "lat": 51.401,
         "lng": 0.015,
         "added": {
@@ -46,7 +46,7 @@
             "Images/2/house 6.jpg",
             "Images/2/house 7.jpg"
         ],
-        "floorPlan": "../src/Images/2/floorplan.png",
+        "floorPlan": "Images/2/floorplan.png",
         "lat": 51.403,
         "lng": 0.015,
         "added": {
@@ -74,7 +74,7 @@
             "Images/3/house 6.jpg",
             "Images/3/house 7.jpg"
         ],
-        "floorPlan": "../src/Images/3/floorplan.png",
+        "floorPlan": "Images/3/floorplan.png",
         "lat": 51.404,
         "lng": 0.015,
         "added": {
@@ -103,7 +103,7 @@
             "Images/4/house 6.jpg",
             "Images/4/house 7.jpg"
     ],
-    "floorPlan": "../src/Images/4/floorplan.png",
+    "floorPlan": "Images/4/floorplan.png",
     "lat": 51.405,
     "lng": 0.015,
     "added": {
@@ -131,7 +131,7 @@
             "Images/5/house 6.jpg",
             "Images/5/house 7.jpg"
     ],
-    "floorPlan": "../src/Images/5/floorplan.png",
+    "floorPlan": "Images/5/floorplan.png",
     "lat": 51.406,
     "lng": 0.015,
     "added": {
@@ -159,7 +159,7 @@
     "Images/6/house 6.jpg",
     "Images/6/house 7.jpg"
   ],
-  "floorPlan": "../src/Images/6/floorplan.png",
+  "floorPlan": "Images/6/floorplan.png",
   "lat": 51.410,
   "lng": 0.017,
   "added": {
@@ -187,7 +187,7 @@
     "Images/7/house 6.jpg",
     "Images/7/house 7.jpg"
   ],
-  "floorPlan": "../src/Images/7/floorplan.png",
+  "floorPlan": "Images/7/floorplan.png",
   "lat": 51.394,
   "lng": -0.304,
   "added": {
