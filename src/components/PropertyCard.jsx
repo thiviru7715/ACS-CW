@@ -7,7 +7,13 @@ function PropertyCard({ property }) {
 
   return (
     <>
-      <div className="property-card">
+      <div
+        className="property-card"
+        draggable="true"
+        onDragStart={(e) => {
+          e.dataTransfer.setData("application/json", JSON.stringify(property));
+        }}
+      >
         <Link to={`/property/${property.id}`}>
           <img src={property.images[0]} alt={property.title} />
           <h3>£{property.price}</h3>

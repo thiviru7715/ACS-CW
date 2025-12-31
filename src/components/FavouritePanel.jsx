@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { FavouritesContext } from "../context/FavouritesContext";
 
 function FavouritesPanel() {
-  const { favourites, removeFavourite, clearFavourites } =
+  const { favourites, addFavourite, removeFavourite, clearFavourites } =
     useContext(FavouritesContext);
 
   return (
@@ -10,8 +10,12 @@ function FavouritesPanel() {
       className="favourites-panel"
       onDragOver={(e) => e.preventDefault()}
       onDrop={(e) => {
-        const id = Number(e.dataTransfer.getData("propertyId"));
-        removeFavourite(id);
+        e.preventDefault();
+        const data = e.dataTransfer.getData("application/json");
+        if (data) {
+          const property = JSON.parse(data);
+          addFavourite(property);
+        }
       }}
     >
       <h3>Favourites</h3>
