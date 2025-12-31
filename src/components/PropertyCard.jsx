@@ -25,7 +25,7 @@ function PropertyCard({ property }) {
           className="favourite-btn"
           onClick={() => addFavourite(property)}
         >
-          ❤️ Save
+          Add to Favourites
         </button>
       </div>
     </>

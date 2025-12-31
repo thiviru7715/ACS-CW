@@ -11,10 +11,25 @@ function SearchPage() {
     maxBeds: "",
     minPrice: "",
     maxPrice: "",
+    addedAfter: "",
   });
 
-
   const filteredProperties = properties.filter((p) => {
+    // Filter by added date
+    if (filters.addedAfter) {
+      const propertyDate = new Date(
+        `${p.added.month} ${p.added.day}, ${p.added.year}`
+      );
+      const filterDate = new Date(filters.addedAfter);
+
+      // Reset time parts for accurate date comparison
+      propertyDate.setHours(0, 0, 0, 0);
+      filterDate.setHours(0, 0, 0, 0);
+
+      if (propertyDate < filterDate) {
+        return false;
+      }
+    }
     if (
       filters.postcode &&
       !p.postcode.startsWith(filters.postcode.toUpperCase())

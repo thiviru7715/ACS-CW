@@ -79,6 +79,18 @@ function SearchForm({ filters, setFilters, onSearch }) {
                 <option value="900000">£900,000</option>
             </select>
 
+            <div className="date-filter">
+                <label htmlFor="addedAfter" style={{ marginRight: "10px" }}>Added after:</label>
+                <input
+                    type="date"
+                    id="addedAfter"
+                    value={filters.addedAfter}
+                    onChange={(e) =>
+                        setFilters({ ...filters, addedAfter: e.target.value })
+                    }
+                />
+            </div>
+
             <button
                 className="search-btn"
                 onClick={onSearch}
