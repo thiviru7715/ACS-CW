@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import FavouritesPanel from './FavouritePanel';
 
 const Header = () => {
     return (
@@ -27,7 +28,14 @@ const Layout = () => {
         <div className="layout">
             <Header />
             <main className="layout-content">
-                <Outlet />
+                <div className="container layout-grid">
+                    <section className="page-main">
+                        <Outlet />
+                    </section>
+                    <aside className="layout-aside">
+                        <FavouritesPanel />
+                    </aside>
+                </div>
             </main>
             <Footer />
         </div>

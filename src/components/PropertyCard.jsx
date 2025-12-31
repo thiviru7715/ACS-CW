@@ -11,8 +11,8 @@ function PropertyCard({ property }) {
         <Link to={`/property/${property.id}`}>
           <img src={property.images[0]} alt={property.title} />
           <h3>£{property.price}</h3>
+          <p><b>{property.type} | {property.bedrooms} Bedrooms</b></p>
           <p>📍{property.location}</p>
-          <p>🏠{property.type} | {property.bedrooms} Bedrooms</p>
           <p>{property.shortDescription}</p>
         </Link>
         <button
@@ -27,3 +27,4 @@ function PropertyCard({ property }) {
 }
 
 export default PropertyCard;
+

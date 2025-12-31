@@ -6,7 +6,7 @@
 
 body {
     font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-    background-color: #c1c4ca;
+    background-color: #b5b9c176;
     color: #1f2933;
     line-height: 1.6;
 }
@@ -16,7 +16,7 @@ a {
     color: inherit;
 }
 
-.continer {
+.container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
@@ -50,16 +50,17 @@ a {
 .search-form button {
     grid-column: span 2;
     padding: 10px;
-    background-color: #2563eb;
+    background-color: #86c067;
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
+    
 }
 
 .search-form button:hover {
-    background-color: #1e40af;
+    background-color: #56bd1a;
 }
 
 .results {
@@ -70,6 +71,7 @@ a {
 
 .property-card {
     background: #ffffff;
+    max-width: 1200px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     overflow: hidden;
@@ -196,6 +198,31 @@ a {
     padding: 15px 0;
     position: sticky;
 }
+/*---------*/
+
+/* Layout content grid */
+.layout-content {
+  flex: 1;
+  padding: 30px 0;
+}
+
+.layout-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 5px;
+  align-items: start;
+}
+
+.page-main {
+  min-width: 0;
+}
+
+.layout-aside {
+  width: 320px;
+}
 
 .header-content {
     display: flex;
@@ -222,18 +249,16 @@ a {
 }
 
 .favourites-panel {
-  position: fixed;
-  top: 0px;
-  right: 20px;
-  width: 300px;
-  max-height: 400px;
+  position: sticky;
+  top: 20px;
+  width: 100%;
+  max-height: calc(100vh - 140px);
   overflow-y: auto;
   background-color: #f9fafb;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 /* Favourite item */
@@ -292,6 +317,14 @@ a {
 
   .results {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .layout-aside {
+    width: 100%;
   }
 
   .favourites-panel {
