@@ -14,13 +14,27 @@ function SearchPage() {
     addedAfter: "",
   });
 
+  const [activeFilters, setActiveFilters] = useState({
+    postcode: "",
+    type: "",
+    minBeds: "",
+    maxBeds: "",
+    minPrice: "",
+    maxPrice: "",
+    addedAfter: "",
+  });
+
+  const handleSearch = () => {
+    setActiveFilters(filters);
+  };
+
   const filteredProperties = properties.filter((p) => {
     // Filter by added date
-    if (filters.addedAfter) {
+    if (activeFilters.addedAfter) {
       const propertyDate = new Date(
         `${p.added.month} ${p.added.day}, ${p.added.year}`
       );
-      const filterDate = new Date(filters.addedAfter);
+      const filterDate = new Date(activeFilters.addedAfter);
 
       // Reset time parts for accurate date comparison
       propertyDate.setHours(0, 0, 0, 0);
@@ -31,29 +45,29 @@ function SearchPage() {
       }
     }
     if (
-      filters.postcode &&
-      !p.postcode.startsWith(filters.postcode.toUpperCase())
+      activeFilters.postcode &&
+      !p.postcode.startsWith(activeFilters.postcode.toUpperCase())
     ) {
       return false;
     }
 
-    if (filters.type && p.type !== filters.type) {
+    if (activeFilters.type && p.type !== activeFilters.type) {
       return false;
     }
 
-    if (filters.minBeds && p.bedrooms < Number(filters.minBeds)) {
+    if (activeFilters.minBeds && p.bedrooms < Number(activeFilters.minBeds)) {
       return false;
     }
 
-    if (filters.maxBeds && p.bedrooms > Number(filters.maxBeds)) {
+    if (activeFilters.maxBeds && p.bedrooms > Number(activeFilters.maxBeds)) {
       return false;
     }
 
-    if (filters.minPrice && p.price < Number(filters.minPrice)) {
+    if (activeFilters.minPrice && p.price < Number(activeFilters.minPrice)) {
       return false;
     }
 
-    if (filters.maxPrice && p.price > Number(filters.maxPrice)) {
+    if (activeFilters.maxPrice && p.price > Number(activeFilters.maxPrice)) {
       return false;
     }
 
@@ -63,7 +77,11 @@ function SearchPage() {
   return (
     <div className="container">
 
-      <SearchForm filters={filters} setFilters={setFilters} />
+      <SearchForm
+        filters={filters}
+        setFilters={setFilters}
+        onSearch={handleSearch}
+      />
 
       <div className="results">
         {filteredProperties.map((p) => (

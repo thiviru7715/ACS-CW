@@ -19,17 +19,29 @@ function FavouritesPanel() {
       }}
     >
       <h3>Favourites</h3>
+      <hr className="divider" />
 
-      {favourites.map((p) => (
-        <div key={p.id} className="favourite-item">
-          <img src={p.images[0]} alt={p.title} />
-          <p>{p.title}</p>
-          <button onClick={() => removeFavourite(p.id)}>✕</button>
+      {favourites.length === 0 ? (
+        <div className="empty-state">
+          <p className="title">No favourites yet</p>
+          <p className="subtitle">
+            Click "Add to favourite" or drag properties here
+          </p>
         </div>
-      ))}
+      ) : (
+        <>
+          {favourites.map((p) => (
+            <div key={p.id} className="favourite-item">
+              <img src={p.images[0]} alt={p.title} />
+              <p>{p.title}</p>
+              <button onClick={() => removeFavourite(p.id)}>✕</button>
+            </div>
+          ))}
 
-      {favourites.length > 0 && (
-        <button onClick={clearFavourites}>Clear all</button>
+          <button onClick={clearFavourites} className="clear-btn">
+            Clear all
+          </button>
+        </>
       )}
     </div>
   );
