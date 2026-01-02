@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-// FIXED IMPORTS: Added '../' to step out of the __tests__ folder
 import { FavouritesProvider, FavouritesContext } from '../context/FavouritesContext';
 import SearchForm from '../components/SearchForm';
 
@@ -24,12 +23,7 @@ const TestContextComponent = () => {
   );
 };
 
-/* -------------------------------------------------------------------
-   TEST SUITE: Coursework Requirements (5 Tests)
-------------------------------------------------------------------- */
 describe('Coursework Required Tests', () => {
-
-  // --- TESTS 1-3: Favourites Context Logic ---
   
   describe('Favourites Feature', () => {
     
@@ -83,8 +77,6 @@ describe('Coursework Required Tests', () => {
       expect(screen.getByTestId('fav-count')).toHaveTextContent('0');
     });
   });
-
-  // --- TESTS 4-5: Search Form Logic ---
 
   describe('Search Functionality', () => {
     // Mock data for SearchForm

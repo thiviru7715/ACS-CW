@@ -50,7 +50,7 @@ a {
 .search-form button {
     grid-column: span 2;
     padding: 10px;
-    background-color: #86c067;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 8px;
@@ -60,7 +60,7 @@ a {
 }
 
 .search-form button:hover {
-    background-color: #56bd1a;
+    background-color: #2f302f;
 }
 
 .results {
@@ -81,6 +81,7 @@ a {
 
 .property-card:hover {
     transform: translateY(-3px);
+    transition: all 0.3s ease;
 }
 
 .property-card img {
