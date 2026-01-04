@@ -32,7 +32,7 @@ function SearchPage() {
   };
 
   const filteredProperties = properties.filter((p) => {
-    
+
     // 1. Date Filter: Checks if property was added after the selected date
     if (activeFilters.addedAfter) {
       const propertyDate = new Date(
@@ -49,10 +49,14 @@ function SearchPage() {
       }
     }
 
-    // 2. Postcode Filter: Case-insensitive prefix match
+    // 2. Postcode Filter
     if (
       activeFilters.postcode &&
-      !p.postcode.startsWith(activeFilters.postcode.toUpperCase())
+      !p.location
+        .split(" ")
+        .pop()
+        .toLowerCase()
+        .startsWith(activeFilters.postcode.toLowerCase())
     ) {
       return false;
     }
