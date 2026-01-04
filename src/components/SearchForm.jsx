@@ -1,16 +1,18 @@
-
 function SearchForm({ filters, setFilters, onSearch }) {
     return (
         <div className="search-form">
+            {/* Input for Postcode filtering */}
             <input
                 type="text"
                 placeholder="Postcode area eg SW1"
                 value={filters.postcode}
+                // Update the 'postcode' field in the filters object on change
                 onChange={(e) =>
                     setFilters({ ...filters, postcode: e.target.value })
                 }
             />
 
+            {/* Dropdown for Property Type */}
             <select
                 value={filters.type}
                 onChange={(e) =>
@@ -22,6 +24,7 @@ function SearchForm({ filters, setFilters, onSearch }) {
                 <option value="Flat">Flat</option>
             </select>
 
+            {/* Dropdown for Minimum Bedrooms */}
             <select
                 value={filters.minBeds}
                 onChange={(e) =>
@@ -34,6 +37,7 @@ function SearchForm({ filters, setFilters, onSearch }) {
                 <option value="3">3</option>
             </select>
 
+            {/* Dropdown for Maximum Bedrooms */}
             <select
                 value={filters.maxBeds}
                 onChange={(e) =>
@@ -91,6 +95,7 @@ function SearchForm({ filters, setFilters, onSearch }) {
                 />
             </div>
 
+            {/* Button to trigger the search action in the parent component */}
             <button
                 className="search-btn"
                 onClick={onSearch}
